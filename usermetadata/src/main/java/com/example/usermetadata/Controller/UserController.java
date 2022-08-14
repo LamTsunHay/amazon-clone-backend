@@ -5,6 +5,8 @@ import com.example.usermetadata.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/amazon/users/")
 public class UserController {
@@ -19,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("getUserDetails/{userId}")
-    public UserMetaData getUserDetails(@PathVariable String userId){
+    public UserMetaData getUserDetails(@PathVariable UUID userId){
         UserMetaData user =  userService.getUserMetaDataToDB(userId);
         return user;
     }

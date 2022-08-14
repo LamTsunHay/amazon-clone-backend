@@ -23,14 +23,21 @@ public class CartService {
         cartRepo.save(cart);
     }
 
-    public void removeItemFromCartService(Cart cart){
-        cartRepo.delete(cart);
+    public void removeItemFromCartService(UUID userId, UUID productId){
+
+        ArrayList<Cart> cartList = cartRepo.findByUserId(userId);
+        long productToBeDel = 0L;
+        for(Cart item:cartList){
+            if(item.productId.toString().equals(productId.toString())){
+                productToBeDel = item.getId();
+            }
+        }
+        cartRepo.deleteById(productToBeDel);
     }
 
     public ProductFormatter displayAllProducts(UUID userId){
         ArrayList<Cart> cartList = cartRepo.findByUserId(userId);
         ArrayList<Product> productList = new ArrayList<>();
-
         ProductFormatter productFormatter = new ProductFormatter();
         productFormatter.setUserId(userId);
         for(int i=0;i<cartList.size();i++){

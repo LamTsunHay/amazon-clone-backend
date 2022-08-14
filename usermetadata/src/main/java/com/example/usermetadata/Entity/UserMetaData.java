@@ -1,9 +1,12 @@
 package com.example.usermetadata.Entity;
 
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.UUID;
 
 @Entity(name="User")
 public class UserMetaData {
@@ -12,16 +15,16 @@ public class UserMetaData {
     private long id;
 
     private String name;
-    private String uniqueId;
+    @Type(type="org.hibernate.type.UUIDCharType")
+    private UUID uniqueId;
     private String email;
 
     public UserMetaData() {
     }
 
-    public UserMetaData(long id, String name, String uniqueId, String email) {
+    public UserMetaData(long id, String name, String email) {
         this.id = id;
         this.name = name;
-        this.uniqueId = uniqueId;
         this.email = email;
     }
 
@@ -33,7 +36,7 @@ public class UserMetaData {
         return name;
     }
 
-    public String getUniqueId() {
+    public UUID getUniqueId() {
         return uniqueId;
     }
 
@@ -49,7 +52,7 @@ public class UserMetaData {
         this.name = name;
     }
 
-    public void setUniqueId(String uniqueId) {
+    public void setUniqueId(UUID uniqueId) {
         this.uniqueId = uniqueId;
     }
 

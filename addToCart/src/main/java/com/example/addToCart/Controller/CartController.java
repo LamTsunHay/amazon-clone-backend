@@ -23,9 +23,9 @@ public class CartController {
         cartService.addItemToCartService(cart);
     }
 
-    @DeleteMapping("/remove")
-    public void removeFromCart(@RequestBody Cart cart){
-        cartService.removeItemFromCartService(cart);
+    @DeleteMapping("/remove/{userId}/{productId}")
+    public void removeFromCart(@PathVariable UUID userId, @PathVariable UUID productId){
+        cartService.removeItemFromCartService(userId, productId);
     }
 
     @GetMapping("/show/{userId}")

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/addToCart/addToCart.iml" filepath="$PROJECT_DIR$/addToCart/addToCart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/amazon-clone-backend.iml" filepath="$PROJECT_DIR$/.idea/amazon-clone-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/productdataservice/productdataservice.iml" filepath="$PROJECT_DIR$/productdataservice/productdataservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usermetadata/usermetadata.iml" filepath="$PROJECT_DIR$/usermetadata/usermetadata.iml" />
+    </modules>
+  </component>
+</project>

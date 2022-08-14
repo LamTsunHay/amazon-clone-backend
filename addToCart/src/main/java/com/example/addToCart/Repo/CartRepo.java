@@ -10,7 +10,7 @@ import java.util.UUID;
 @Repository
 public interface CartRepo extends CrudRepository<Cart, Long> {
     public Cart save(Cart cart);
-    public void delete(Cart cart);
+    public void deleteById(long id);
     public ArrayList<Cart> findByUserId(UUID userId);
 
 }
