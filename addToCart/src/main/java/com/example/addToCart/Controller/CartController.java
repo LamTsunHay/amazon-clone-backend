@@ -19,13 +19,13 @@ public class CartController {
     CartService cartService;
 
     @PostMapping("/add")
-    public void addToCart(@RequestBody Cart cart){
-        cartService.addItemToCartService(cart);
+    public Cart addToCart(@RequestBody Cart cart){
+        return cartService.addItemToCartService(cart);
     }
 
-    @DeleteMapping("/remove/{userId}/{productId}")
-    public void removeFromCart(@PathVariable UUID userId, @PathVariable UUID productId){
-        cartService.removeItemFromCartService(userId, productId);
+    @DeleteMapping("/remove")
+    public void removeFromCart(@RequestBody Cart cart){
+        cartService.removeItemFromCartService(cart);
     }
 
     @GetMapping("/show/{userId}")

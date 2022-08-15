@@ -2,21 +2,20 @@ package com.example.addToCart.Entity;
 
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.UUID;
 
-@Entity(name = "Cart")
-public class Cart {
+@Entity(name = "cart")
+public class Cart{
     @Id
     @GeneratedValue
-    public long id;
+    private long id;
 
     @Type(type="org.hibernate.type.UUIDCharType")
-    public UUID userId;
+    private UUID userId;
+
     @Type(type="org.hibernate.type.UUIDCharType")
-    public UUID productId;
+    private UUID productId;
 
     public Cart() {
     }

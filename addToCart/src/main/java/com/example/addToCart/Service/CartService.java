@@ -19,20 +19,19 @@ public class CartService {
     @Autowired
     ProductDetailsProxy productDetailsProxy;
 
-    public void addItemToCartService(Cart cart){
-        cartRepo.save(cart);
+    public Cart addItemToCartService(Cart cart){
+        return cartRepo.save(cart);
     }
 
-    public void removeItemFromCartService(UUID userId, UUID productId){
-
+    public void removeItemFromCartService(Cart cart){
+        UUID userId = cart.getUserId();
         ArrayList<Cart> cartList = cartRepo.findByUserId(userId);
-        long productToBeDel = 0L;
         for(Cart item:cartList){
-            if(item.productId.toString().equals(productId.toString())){
-                productToBeDel = item.getId();
+            if(cart.getProductId().toString().equals(item.getProductId().toString())){
+                cartRepo.deleteById(item.getId());
+                return;
             }
         }
-        cartRepo.deleteById(productToBeDel);
     }
 
     public ProductFormatter displayAllProducts(UUID userId){
