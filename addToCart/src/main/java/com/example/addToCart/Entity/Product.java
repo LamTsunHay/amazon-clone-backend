@@ -10,6 +10,7 @@ public class Product {
     public double price;
     public double rating;
     public String imageURL;
+    public float stars;
 
     public BigInteger getId() {
         return id;
@@ -57,5 +58,13 @@ public class Product {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public float getStars() {
+        return stars;
+    }
+
+    public void setStars(float stars) {
+        this.stars = stars;
     }
 }

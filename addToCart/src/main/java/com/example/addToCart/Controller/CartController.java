@@ -1,16 +1,14 @@
 package com.example.addToCart.Controller;
 
 import com.example.addToCart.Entity.Cart;
-import com.example.addToCart.Entity.Product;
-//import com.example.addToCart.Entity.ProductFormatter;
 import com.example.addToCart.Entity.ProductFormatter;
 import com.example.addToCart.Service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/amazon/addToCart")
 public class CartController {

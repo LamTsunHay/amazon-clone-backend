@@ -19,17 +19,19 @@ public class Product{
     public double price;
     public double rating;
     public String imageURL;
+    public float stars;
 
     public Product() {
     }
 
-    public Product(BigInteger id, UUID productId, String name, double price, double rating, String imageURL) {
+    public Product(BigInteger id, UUID productId, String name, double price, double rating, String imageURL, float stars) {
         this.id = id;
         this.productId = productId;
         this.name = name;
         this.price = price;
         this.rating = rating;
         this.imageURL = imageURL;
+        this.stars = stars;
     }
 
     public BigInteger getId() {
@@ -78,5 +80,13 @@ public class Product{
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public float getStars() {
+        return stars;
+    }
+
+    public void setStars(float stars) {
+        this.stars = stars;
     }
 }
