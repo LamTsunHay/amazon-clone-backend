@@ -25,4 +25,7 @@ public class ProductService {
         return productRepo.findByProductId(productId);
     }
 
+    public ArrayList<Product> searchProductsByKeyword(String keyword){
+        return productRepo.findByNameContainsIgnoreCase(keyword);
+    }
 }

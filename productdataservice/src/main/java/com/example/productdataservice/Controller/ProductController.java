@@ -31,4 +31,8 @@ public class ProductController {
         return productService.getProductDetails(productId);
     }
 
+    @GetMapping("/search")
+    public ArrayList<Product> getSearchProductsByKeyWord(@RequestParam("keyword") String keyword){
+        return productService.searchProductsByKeyword(keyword);
+    }
 }

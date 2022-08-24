@@ -13,4 +13,6 @@ public interface ProductRepo extends MongoRepository<Product, BigInteger> {
     Product save(Product product);
     ArrayList<Product> findAll();
     Product findByProductId(UUID productId);
+
+    ArrayList<Product> findByNameContainsIgnoreCase(String keyword);
 }
