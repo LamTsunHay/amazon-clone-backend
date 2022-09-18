@@ -22,6 +22,21 @@ Built front-end application using React framework and integrated with CSS and HT
 npm start
 ```
 
+## Project Demo
+
+### Home Page
+![image](https://user-images.githubusercontent.com/84372565/190903181-07988db3-272a-4f3f-a35b-db7fab52bd3b.png)
+
+### Product Display Page
+https://user-images.githubusercontent.com/84372565/190912953-f202d9b1-da48-48bf-9ebc-fab67a6393df.mp4
+
+### Product Detail Page
+![image](https://user-images.githubusercontent.com/84372565/190913038-2a9dcb85-5930-469c-b39c-a514eaab6f09.png)
+
+### Add Products to Cart and Checkout
+https://user-images.githubusercontent.com/84372565/190913300-c0fca88b-50d3-4ea3-acd8-66bf11521532.mp4
+
+
 ## Authors
 
 Contributors names and contact info
