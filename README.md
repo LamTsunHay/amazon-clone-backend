@@ -27,7 +27,7 @@ npm start
 Contributors names and contact info
 
 Lam Tsun Hay 
-Linkedin: [https://www.linkedin.com/in/tsunhay-lam/](https://www.linkedin.com/in/tsunhay-lam/)
+* Linkedin: [https://www.linkedin.com/in/tsunhay-lam/](https://www.linkedin.com/in/tsunhay-lam/)
 
 
 ## License
