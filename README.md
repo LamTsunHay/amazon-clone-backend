@@ -1,16 +1,16 @@
 # Amazon Clone Project
 
-Simple overview of use/purpose.
+Cloned the complete Amazon application using React framework and Spring Boot Java framework. Starting from the Home page, product display page, product detail page as well cart & checkout page.  
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Built front-end application using React framework and integrated with CSS and HTML. Implemented backend api service with Spring Boot Java framework. Built CRUD service for product display and shopping cart implementations. Used MongoDB and MySQL to store product metadata and shopping cart products. Learnt to build a full stack e-commerce project from this project in my final year programming bachelor degree.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* Pull the frontend from repo [Link text Here](https://link-url-here.org)  
 * ex. Windows 10
 
 ### Installing
