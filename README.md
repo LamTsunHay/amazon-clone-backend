@@ -10,53 +10,35 @@ Built front-end application using React framework and integrated with CSS and HT
 
 ### Dependencies
 
-* Pull the frontend from repo [Link text Here](https://link-url-here.org)  
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Pull the frontend from repo [Amazon Clone Frontend](https://github.com/LamTsunHay/amazon-clone-frontend)  
+* JDK 18 
 
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
+* Open back-end folder 
+* Run UsermetaData, Productdataservice and AddToCart
+* Open front-end folder 
+* Excecute following command
 ```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+npm start
 ```
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Lam Tsun Hay 
+Linkedin: [https://www.linkedin.com/in/tsunhay-lam/](https://www.linkedin.com/in/tsunhay-lam/)
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under Lam Tsun Hay License 
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Inspiration
+* [Amazon-clone Tutorial](https://www.youtube.com/watch?v=397AZniLo04&t=9s)
+* [React](https://reactjs.org/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [MongoDB](https://www.mongodb.com/)
+* [MySQL](https://www.mysql.com/)
